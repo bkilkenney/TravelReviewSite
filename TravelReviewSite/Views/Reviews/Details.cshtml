@@ -6,45 +6,31 @@
 
 <h2>Vacation Details</h2>
 
-
 <div class="row">
-    
 
-        <div class="col-sm-6 col-md-4">
-            <div class="thumbnail">
-                <div class="caption">
-                                                                    @*Below are the details of each individual entry*@
-                    <p><h4>Vacation Type:</h4>@Html.DisplayNameFor(model => model.Category.Name)</p>  
+    <div class="col-sm-6 col-md-4">
+        <div class="thumbnail">
+            <div class="caption">
+                                 @*Below are the details of each individual entry*@
 
+                <p><h4>Vacation Type:</h4> @Html.DisplayFor(model => model.Category.Name)</p> @*Tropical*@
 
-                   <p><h4>Review Title:</h4> @Html.DisplayFor(model => model.Category.Name)</p>
+                <p><h4>Review Name:</h4>@Html.DisplayFor(model => model.ReviewTitle)</p>
 
+                <p><h4>Review:</h4> @Html.DisplayFor(model => model.ReviewContent)</p>
 
-                   <p> @Html.DisplayNameFor(model => model.ReviewTitle)</p>
+                <p><h4>Date:</h4> @Html.DisplayFor(model => model.PublishDate)</p>
 
-
-                    <p>@Html.DisplayFor(model => model.ReviewTitle)</p>
-
-
-                    <p><h4>Review:</h4>@Html.DisplayNameFor(model => model.ReviewContent)</p>
-
-
-                   <p> @Html.DisplayFor(model => model.ReviewContent)</p>
-
-
-                   <p><h4>Review Date:</h4> @Html.DisplayNameFor(model => model.PublishDate)</p>
-
-
-                   <p> @Html.DisplayFor(model => model.PublishDate)</p>
-
-                    <p>
-                        @Html.ActionLink("Edit", "Edit", new { id = Model.ID }, new { @class = "btn btn-primary" })
-                        @Html.ActionLink("Back to List", "Index", new { id = Model.ID }, new { @class = "btn btn-warning" })
-                    </p>
-
-                </div>
+                <p>                 @*Blue and Orange buttons*@
+                    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }, new { @class = "btn btn-primary" })
+                    @Html.ActionLink("Back to List", "Index", new { id = Model.ID }, new { @class = "btn btn-warning" })
+                </p>
             </div>
         </div>
-
-  
     </div>
+</div>
+
+@*Vacation Type:</h4>@Html.DisplayNameFor(model => model.Category.Name)*@
+@*Review:</h4> @Html.DisplayNameFor(model => model.ReviewTitle)*@
+@*Review:</h4>@Html.DisplayNameFor(model => model.ReviewContent)*@
+@*Review Date:</h4> @Html.DisplayNameFor(model => model.PublishDate)*@
