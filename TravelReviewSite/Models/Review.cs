@@ -12,8 +12,11 @@ namespace TravelReviewSite.Models
         [Key] //Primary Key of the Reviews table
 
         public int ID { get; set; }
+        [Display(Name ="Title")]
         public string ReviewTitle { get; set; }
+        [Display(Name ="Review")]
         public string ReviewContent { get; set; }
+        [Display(Name = "Date Posted")]
         public DateTime PublishDate { get; set; }
         
 

@@ -1,51 +1,82 @@
 ﻿@model IEnumerable<TravelReviewSite.Models.Review>
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "ORBRADZ";
 }
 
-<h2>Index</h2>
+<h2>VACATION REVIEWS FROM ORBRADZ</h2>
 
 <p>
     @Html.ActionLink("Create New", "Create")
 </p>
-<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.Category.Name)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.ReviewTitle)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.ReviewContent)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.PublishDate)
-        </th>
-        <th></th>
-    </tr>
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.Category.Name)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.ReviewTitle)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.ReviewContent)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.PublishDate)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |
-            @Html.ActionLink("Details", "Details", new { id=item.ID }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.ID })
-        </td>
-    </tr>
-}
 
-</table>
+
+                    @*<p>@Html.DisplayNameFor(model => model.Category.Name)</p>
+
+
+                    <p>@Html.DisplayNameFor(model => model.ReviewTitle)</p>
+
+
+                    <p>@Html.DisplayNameFor(model => model.ReviewContent)</p>
+
+
+                    <p>@Html.DisplayNameFor(model => model.PublishDate)</p>*@
+
+
+
+<div class="row">
+
+
+
+    @foreach (var item in Model)
+    {
+
+        <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+                <div class="caption">
+
+
+                    <p><h4>Vacation Type:</h4> @Html.DisplayFor(modelItem => item.Category.Name)</p>
+
+
+                    <p><h4>Headline:</h4> @Html.DisplayFor(modelItem => item.ReviewTitle)</p>
+
+
+                    <p><h4>Review:</h4>  @Html.DisplayFor(modelItem => item.ReviewContent)</p>
+
+
+                    <p><h4>Date:</h4> @Html.DisplayFor(modelItem => item.PublishDate)</p>
+
+
+                    <p>
+                        @Html.ActionLink("Edit", "Edit", new { id = item.ID }, new {@class="btn btn-primary" })
+                        @Html.ActionLink("Details", "Details", new { id = item.ID }, new { @class = "btn btn-danger" })
+                        @Html.ActionLink("Delete", "Delete", new { id = item.ID }, new { @class = "btn btn-success" })
+                    </p>
+                   
+
+                </div>
+            </div>
+        </div>
+
+
+    }
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
