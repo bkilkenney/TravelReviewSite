@@ -55,3 +55,5 @@ c:\users\bkilkenney\documents\visual studio 2015\Projects\TravelReviewSite\Trave
 c:\users\bkilkenney\documents\visual studio 2015\Projects\TravelReviewSite\TravelReviewSite\bin\EntityFramework.SqlServer.dll
 c:\users\bkilkenney\documents\visual studio 2015\Projects\TravelReviewSite\TravelReviewSite\bin\EntityFramework.xml
 c:\users\bkilkenney\documents\visual studio 2015\Projects\TravelReviewSite\TravelReviewSite\bin\EntityFramework.SqlServer.xml
+C:\Users\bkilkenney\Documents\Visual Studio 2015\Projects\TravelReviewSite\TravelReviewSite\obj\Debug\TravelReviewSite.Migrations.InitialCreate.resources
+C:\Users\bkilkenney\Documents\Visual Studio 2015\Projects\TravelReviewSite\TravelReviewSite\obj\Debug\TravelReviewSite.csproj.GenerateResource.Cache
