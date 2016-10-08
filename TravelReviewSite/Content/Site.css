@@ -1,6 +1,7 @@
 ﻿body {
     padding-top: 50px;
     padding-bottom: 20px;
+    background-image: url('../images/Starry Night.jpg');
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -28,4 +29,35 @@ h4{
     font-size:14px;
     font-weight:bolder;
     
+}
+
+h2{
+    color:navajowhite;
+}
+
+.navbar-inverse, .navbar-brand, .navbar-collapse, .navbar-nav{
+     background-color:#bb4141;
+     color:navajowhite;
+    
+}
+
+li{
+    background-color: #bb4141;
+    color:navajowhite;
+}
+
+a{
+    color:navajowhite;
+}
+
+footer{
+    color:navajowhite;
+}
+
+nav{
+    color:navajowhite;
+}
+
+.navbar{
+    color:navajowhite;
 }
