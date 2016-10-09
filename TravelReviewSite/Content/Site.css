@@ -35,7 +35,7 @@ h2{
     color:navajowhite;
 }
 
-.navbar-inverse, .navbar-brand, .navbar-collapse, .navbar-nav{
+.navbar-inverse, .navbar-collapse, .navbar-nav{
      background-color:#bb4141;
      color:navajowhite;
     
@@ -58,6 +58,26 @@ nav{
     color:navajowhite;
 }
 
+.collapse{
+    color:navajowhite;
+}
+
 .navbar{
     color:navajowhite;
+}
+
+.navbar-brand{
+    color:navajowhite;
+}
+
+.navbar-fixed-top{
+    color:navajowhite;
+}
+
+.links{
+    color:navajowhite;
+}
+
+.thumbnail{
+    margin:10px;
 }
