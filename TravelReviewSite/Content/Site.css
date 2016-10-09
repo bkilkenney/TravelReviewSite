@@ -22,7 +22,9 @@ input,
 select,
 textarea {
     max-width: 280px;
+    color:navajowhite;
 }
+
 
 h4{
     text-decoration:underline;
@@ -41,42 +43,12 @@ h2{
     
 }
 
-li{
-    background-color: #bb4141;
-    color:navajowhite;
-}
 
-a{
-    color:navajowhite;
-}
 
 footer{
     color:navajowhite;
 }
 
-nav{
-    color:navajowhite;
-}
-
-.collapse{
-    color:navajowhite;
-}
-
-.navbar{
-    color:navajowhite;
-}
-
-.navbar-brand{
-    color:navajowhite;
-}
-
-.navbar-fixed-top{
-    color:navajowhite;
-}
-
-.links{
-    color:navajowhite;
-}
 
 .thumbnail{
     margin:10px;

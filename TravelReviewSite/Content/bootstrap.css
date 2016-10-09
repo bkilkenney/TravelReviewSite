@@ -63,11 +63,13 @@ body {
 
 a:focus {
   outline: thin dotted;
+  color:navajowhite;
 }
 
 a:active,
 a:hover {
   outline: 0;
+  color:navajowhite;
 }
 
 h1 {
