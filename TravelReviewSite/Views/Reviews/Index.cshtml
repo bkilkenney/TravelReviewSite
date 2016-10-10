@@ -7,18 +7,18 @@
 <h2>VACATION REVIEWS FROM ORBRADZ</h2>
 
 <p>
-    @Html.ActionLink("Create New", "Create")
+    @Html.ActionLink("Create New", "Create")  <!--Line for user to submit a review-->
 </p>
 
-<div class="row">
+<div class="row">   <!--Thumbnails in row-->
 
-
-    @foreach (var item in Model)
+                            @*"item" is a temporary variable for used for this loop*@
+    @foreach (var item in Model)  
     {
-        <div class="col-sm-6 col-md-4 col-lg-4">
+        <div class="col-sm-6 col-md-4 col-lg-4">  <!--These column sizes have worked the best for responsiveness on any size screen-->
             <div class="thumbnail">
                 <div class="caption">
-
+                           @*modelItem is the name of this Lambda that goes to (=>) the Name Property(column) of the Category table*@
                     <p><h4>Vacation Type:</h4> @Html.DisplayFor(modelItem => item.Category.Name)</p>
 
 
@@ -30,7 +30,7 @@
 
                     <p><h4>Date:</h4> @Html.DisplayFor(modelItem => item.PublishDate)</p>
 
-                    <p>
+                    <p>  @*3 buttons on the same line below*@
                         @Html.ActionLink("Edit", "Edit", new { id = item.ID }, new {@class="btn btn-primary" })
                         @Html.ActionLink("Details", "Details", new { id = item.ID }, new { @class = "btn btn-danger" })
                         @Html.ActionLink("Delete", "Delete", new { id = item.ID }, new { @class = "btn btn-success" })
@@ -41,7 +41,7 @@
     }
 </div>
 
-<!--A search bar to explore the site-->
+<!--A search bar to explore the site, learned in ASP.NET MVC5 textbook-->
 
 <form class="navbar-form navbar-right" role="search">
 
@@ -55,7 +55,7 @@
 
 </form>
 
-<!--An alert message-->
+<!--An alert message, found in O'Reilly book-->
 
 <div class="alert alert-success alert-dismissible" role="alert">
 

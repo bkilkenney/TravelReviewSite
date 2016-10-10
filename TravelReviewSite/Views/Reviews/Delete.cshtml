@@ -5,52 +5,46 @@
 }
 
 <h2>Delete</h2>
+<!--h2 above and h3 below are both now styled with the same color as the index page-->
+<h3>Are you sure you want to delete this review?</h3>
 
-<h3>Are you sure you want to delete this?</h3>
-<div>
-    <h4>Review</h4>
-    <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.Category.Name)
-        </dt>
+<!--Intentionally not putting the follwing col in a row since you only will ever view delete with 1 thumbnail at a time-->
 
-        <dd>
-            @Html.DisplayFor(model => model.Category.Name)
-        </dd>
+<div class="col-sm-6 col-md-4 col-lg-4">
+    <!--These column sizes have worked the best for responsiveness on any size screen-->
+    <div class="thumbnail">
+        <div class="caption">
 
-        <dt>
-            @Html.DisplayNameFor(model => model.ReviewTitle)
-        </dt>
+            <!--DisplayNameFor styled as a h4 on it's own line-->
+            <!--Took out the first line, prefer how it looks now-->
 
-        <dd>
-            @Html.DisplayFor(model => model.ReviewTitle)
-        </dd>
+            <p><h4>@Html.DisplayNameFor(model => model.ReviewTitle)</h4></p>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.ReviewContent)
-        </dt>
+            <p>@Html.DisplayFor(model => model.ReviewTitle)</p>
 
-        <dd>
-            @Html.DisplayFor(model => model.ReviewContent)
-        </dd>
+            <p><h4>@Html.DisplayNameFor(model => model.ReviewContent)</h4></p>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.PublishDate)
-        </dt>
+            <p>@Html.DisplayFor(model => model.ReviewContent)</p>
 
-        <dd>
-            @Html.DisplayFor(model => model.PublishDate)
-        </dd>
+            <p><h4>@Html.DisplayNameFor(model => model.PublishDate)</h4></p>
 
-    </dl>
+            <p>@Html.DisplayFor(model => model.PublishDate)</p>
 
-    @using (Html.BeginForm()) {
-        @Html.AntiForgeryToken()
 
-        <div class="form-actions no-color">
-            <input type="submit" value="Delete" class="btn btn-default" /> |
-            @Html.ActionLink("Back to List", "Index")
+
+            @using (Html.BeginForm())
+            {
+                @Html.AntiForgeryToken()
+
+                <div class="form-actions no-color">
+                    @*Orange back to list button and Green delete button below *@
+                    @Html.ActionLink("Delete", "Delete", new { id = Model.ID }, new { @class = "btn btn-success" })
+                    @Html.ActionLink("Back to List", "Index", new { id = Model.ID }, new { @class = "btn btn-warning" })
+                </div>
+            }
         </div>
-    }
+    </div>
 </div>
+
+
+
