@@ -1,7 +1,7 @@
 # TravelReviewSite
 
 The purpose of this project is to use ASP.NET MVC to create a travel review site.  Below are the required tasks which were all completed
-2 days ahead of schedule. A branch was created in Github to experiment with stretch tasks.  
+2 days ahead of schedule. Styled the edit and delete pages as a stretch task but didn't give each review an image b/c most images would clash with the background image.  
 
 Required Tasks
 •	  Create the following models
