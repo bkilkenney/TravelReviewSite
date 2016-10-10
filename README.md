@@ -3,8 +3,11 @@
 Tasks
 Required Tasks
 •	  Create the following models
+
 o	  Review
+
 o	  Category
+
 •	  Your Review model should have properties to properly represent all the fields you feel need represented in a review. This may include:
 o	  ID
 o	  Title
