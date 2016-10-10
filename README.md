@@ -2,11 +2,10 @@
 
 The goal of this project is to create an ASP.NET MVC web application for a vacation review site.  Here are the required tasks. 
 
-Tasks
 Required Tasks
-•	  Create the following models
-        o	  Review - Complete
-        o	  Category - Complete
+    -Create the following models
+        *Review - Complete
+        *Category - Complete
         
 •	  Your Review model should have properties to properly represent all the fields you feel need represented in a review. This may include:
         o	  ID - Complete
