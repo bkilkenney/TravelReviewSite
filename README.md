@@ -28,6 +28,7 @@ o	  Columns
 o	  Program should be commented throughout explaining the code
 
 Below are stretch tasks
+
 •	  Stretch Tasks
 o	  Add Unique images for each review
 o	  Style the Edit, Create, and Delete pages
